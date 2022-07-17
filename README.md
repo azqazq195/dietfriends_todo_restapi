@@ -56,7 +56,7 @@ JWT 인증 구현에 따라 `signin` `signup` 제외 요청시 Header 에 토큰
 
 # url
 
-시간관계상 swagger 및 docs 는 작성하지 못했습니다. root 경로의 postman 혹은 `Controller.java` 를 참고해 주세요.
+시간관계상 swagger 및 docs 는 작성하지 못했습니다. root 경로의 postman.zip 혹은 `*Controller.java` 를 참고해 주세요.
 
 ### 메모
 - 다하고 보니까 `FileInfo` 에 type 을 빼먹음.
