@@ -1,0 +1,59 @@
+spring:
+  profiles:
+    group:
+      local: "local,common"
+      prod: "prod,common"
+---
+spring:
+  config:
+    activate:
+      on-profile: "common"
+---
+spring:
+  config:
+    activate:
+      on-profile: "local"
+  devtools:
+    add-properties: true
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/dietfriends
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: qwe123
+
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+config:
+  apikey: seonghamoon
+  volume: D:\\volume\\
+
+server:
+  port: 8080
+---
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+  datasource:
+    url: jdbc:mariadb://172.17.0.4:3306/assistant
+    username: root
+    password: Qkrrhkwkd5gh@
+
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+
+config:
+  apikey: seonghamoon
+  volume: /home/volume/
+
+server:
+  port: 9999
