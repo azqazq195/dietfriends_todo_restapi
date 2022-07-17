@@ -50,6 +50,8 @@ Query Parameters 중 `limit` `skip` 두가지가 요구되었는데, `skip`이 �
 JWT 인증 구현에 따라 `signin` `signup` 제외 요청시 Header 에 토큰 정보 필수입니다.
 `Authorization : accessToken` 
 
+또한 CUD 요청시 소유자가 아니면 오류가 발생합니다.
+
 요구된 `apikey` 와 별개이며, `refreshToken`은 발급은 하나 관련 로직은 구현하지 않았습니다.
 
 # APIKEY = seonghamoon
