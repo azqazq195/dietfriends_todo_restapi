@@ -17,7 +17,7 @@
 6. ~~CI / CD~~ 미구현
 
 # 변경 점
-1. Todo Schema
+### 1. Todo Schema
 
 [Todo Model](https://todos.dietfriends.kr/)
 
@@ -41,11 +41,11 @@ public class Todo {
 }
 ```
 
-2. List Todos 파라미터 누락
+### 2. List Todos 파라미터 누락
 
 Query Parameters 중 `limit` `skip` 두가지가 요구되었는데, `skip`이 무엇인지 잘 모르겠습니다. 문의 결과 Page 구현을 요구하시는 것 같지만 skip 에 대한 정보는 찾을 수 없어 `limit` `page` 로 구현하였습니다.
 
-3. Authorization
+### 3. Authorization
 
 JWT 인증 구현에 따라 `signin` `signup` 제외 요청시 Header 에 토큰 정보 필수입니다.
 `Authorization : accessToken` 
