@@ -58,7 +58,12 @@ JWT 인증 구현에 따라 `signin` `signup` 제외 요청시 Header 에 토큰
 
 시간관계상 swagger 및 docs 는 작성하지 못했습니다. root 경로의 postman.zip 혹은 `*Controller.java` 를 참고해 주세요.
 
-### 메모
+---
+---
+---
+---
+
+# 메모
 - 다하고 보니까 `FileInfo` 에 type 을 빼먹음.
 - filter 동작 시에는 yml 을 읽어 올 수 없음 Environment 를 통해 해결하긴 했으나 lifecycle 확인 하도록.
 - application.yml 그룹 분리 시 Test 에 어떤 설정으로 할지 명시해야함. `@ActiveProfiles("local")`
